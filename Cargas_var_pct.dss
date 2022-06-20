@@ -1,0 +1,11 @@
+Redirect LoadShape2.DSS
+
+!60% da carga em IBR
+!S = 8250 kVA
+new Load.Carga_IBR phases=3 bus1=trafo_IBR kV=13.8 kVA=8250 pf=0.92 model=1 daily=Residential_diario 
+!60% de S em ITO
+!S = 12500 kVA
+new Load.Carga_ITO phases=3 bus1=trafo_ITO kV=13.8 kVA=12500 pf=0.92 model=1 daily=Residential_diario
+!60% de S em PCO
+!S = 12500 kVA
+new Load.Carga_PCO phases=3 bus1=trafo_PCO kV=13.8 kVA=12500 pf=0.92 model=1 daily=Residential_diario

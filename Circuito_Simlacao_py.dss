@@ -1,0 +1,16 @@
+clear
+
+New circuit.Circuito31 bus1=61546321922435265AT
+~ basekv=69 pu=1.05 
+
+
+Redirect Linhas.dss
+Redirect Chaves.dss
+Redirect Cargas_var_pct.dss
+Redirect Transformadores.dss
+
+
+set voltagebases = [69, 13.8]
+CalcVoltageBases
+
+Buscoords Bus_XY.csv
